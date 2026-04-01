@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome, Founding Member! â Longevity Club</title>
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Google Analytics 4 â Same ID as landing page -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+  // Track successful purchase
+  gtag('event', 'purchase', {
+    currency: 'USD',
+    value: 9.99,
+    transaction_id: new URLSearchParams(window.location.search).get('session_id') || 'direct',
+    items: [{ item_name: 'Founding Member', price: 9.99 }]
+  });
+</script>
+
+<style>
+  :root {
+    --navy: #0f2b4a;
+    --teal: #0d9488;
+    --teal-dark: #0b7a70;
+    --teal-light: #ccfbf1;
+    --gold: #f59e0b;
+    --gray-50: #f8fafc;
+    --gray-500: #64748b;
+    --gray-700: #334155;
+    --gray-800: #1e293b;
+    --white: #ffffff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--gray-800);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--navy) 0%, #1a4a6e 50%, #0d6e6e 100%);
+  }
+  .card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 48px 40px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 25px 80px rgba(0,0,0,0.3);
+  }
+  .badge {
+    display: inline-block;
+    background: var(--teal-light);
+    color: var(--teal);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 18px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--navy);
+    margin-bottom: 12px;
+    line-height: 1.2;
+  }
+  h1 span { color: var(--gold); }
+  .subtitle {
+    font-size: 17px;
+    color: var(--gray-500);
+    margin-bottom: 32px;
+  }
+  .steps {
+    text-align: left;
+    background: var(--gray-50);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+  }
+  .steps h3 {
+    font-size: 15px;
+    color: var(--teal);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+  .step:last-child { margin-bottom: 0; }
+  .step-num {
+    background: var(--teal);
+    color: var(--white);
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .step-text {
+    font-size: 15px;
+    color: var(--gray-700);
+  }
+  .step-text strong { color: var(--navy); }
+  .cta-btn {
+    display: inline-block;
+    background: var(--teal);
+    color: var(--white);
+    padding: 16px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-bottom: 16px;
+  }
+  .cta-btn:hover {
+    background: var(--teal-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(13,148,136,0.35);
+  }
+  .note {
+    font-size: 14px;
+    color: var(--gray-500);
+  }
+  .note a { color: var(--teal); text-decoration: none; }
+  .confetti { font-size: 48px; margin-bottom: 16px; }
+
+  @media (max-width: 640px) {
+    .card { padding: 32px 24px; }
+    h1 { font-size: 26px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="confetti">ð</div>
+  <div class="badge">Founding Member</div>
+  <h1>Welcome to <span>Longevity Club</span></h1>
+  <p class="subtitle">Your payment was successful. You now have lifetime access to all 75 cities, 36 metrics, and every future update.</p>
+
+  <div class="steps">
+    <h3>What happens next</h3>
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-text"><strong>Check your email</strong> â Your welcome email with full access link is on its way (check spam if you don't see it within 2 minutes)</div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-text"><strong>Explore the full index</strong> â Compare all 75 cities across 12 Pillars and 36 longevity metrics</div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-text"><strong>Try the comparison tool</strong> â Pick two cities and see them side-by-side. Start with your current city vs. #1 Okinawa</div>
+    </div>
+  </div>
+
+  <!-- TODO: Replace # with your full index page URL -->
+  <a href="#" class="cta-btn">Start Exploring All 75 Cities</a>
+
+  <p class="note">
+    Receipt sent to your email via Stripe.<br>
+    Questions? <a href="mailto:support@longeva.space">support@longeva.space</a>
+  </p>
+</div>
+
+</body>
+</html>
