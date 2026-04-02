@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f2b4a"/>
+      <stop offset="50%" style="stop-color:#1a4a6e"/>
+      <stop offset="100%" style="stop-color:#0d6e6e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <text x="600" y="200" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="72" font-weight="800" fill="#ffffff">Longevity Club</text>
+  <text x="600" y="280" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="28" fill="#ccfbf1">Where Will You Live Your Longest Life?</text>
+  <text x="600" y="380" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="22" fill="#94a3b8">82 Cities · 8 Dimensions · 13 Global Data Sources</text>
+  <text x="600" y="420" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="18" fill="#64748b">WHO · Lancet GBD · Yale EPI · Global Peace Index · UN Data</text>
+  <rect x="440" y="475" width="320" height="56" rx="8" fill="#0d9488"/>
+  <text x="600" y="510" text-anchor="middle" font-family="Segoe UI, system-ui, sans-serif" font-size="20" font-weight="700" fill="#ffffff">longeva.space</text>
+</svg>
